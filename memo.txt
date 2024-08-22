@@ -1,0 +1,18 @@
+1. 인접 행렬과 인접 리스트
+2. dfs 구현
+- for i in range()와 for i in list의 차이를 구별하기!
+3. bfs 구현
+- deque
+from collections import deque
+queue = deque([1])
+deque의 생성자 함수는 반복 가능한 객체를 받아 들인다.
+리스트, 튜플, 문자열 등 반복 가능한 객체를 사용해야 한다.
+deque(1)과 같이 사용할 경우, TypeError를 발생시킨다.
+- queue에서 원소를 꺼낼 때, popleft()가 핵심
+
+4. 입력받기
+n, m = map(int, input().split())
+# 2차원 리스트 입력 받기
+graph = []
+for i in range(n):
+    graph.append(list(map(int, input())))
